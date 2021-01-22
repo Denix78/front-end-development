@@ -1,70 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
-    <title>Assignment 1</title>
-</head>
-<body>
-    <h1>Stevan Stojanović Mokranjac</h1>
-    <p><b>Stevan Stojanović Mokranjac </b>(<i>January 9, 1856–1914</i>) was a Serbian composer and music educator. His work was essential in bringing the spirit of <b>Valach Serbian
-        unwritten folk poems</b> into organized art. </p>
-        
-        <h2>Biography</h2>
-        <hr>
-        <p><mark>He was born in Negotin.</mark> From the birthplace of his parents he drew the second last name Mokranjac (<i>literally: resident of Mokranje</i>).</p>
-        
-        <p>
-            He graduated from the <b>Belgrade high school</b>, and attended the natural science and mathematics section of the <b>University of Belgrade</b>. In 1879 he traveled to <b>Munich</b>
-             where he studied music in the class of <b>Josef Rheinberger</b>. After a brief<br> break, he continued to study in <b>Rome</b> in the class of <b>Parisotti</b>, in 1884. Returning
-            to <b>Serbia</b> in 1884 he briefly became the conductor of the <b>Kornelije Stanković choir of Belgrade</b>.
-        </p>
-        <P>
-            From 1885 to 1887 he studied music in <b>Leipzig, Germany</b>. Upon his return to <b>Serbia</b> in 1887 he became the conductor of the <b>Belgrade singing society</b> (<i>Choir</i>).
-             From 1887 to 1900 he taught music at the <b>Belgrade high school</b>, and in<br> 1901 transferred to <b>Bogoslovija</b> (<i>Belgrade Theological College</i>) where he taught church singing.
-              Together with <b>Stanislav Binički</b> and <b>Cvetko Manojlović</b>, <b>Mokranjac</b> founded the first independent music school in 1899 - <mark>Serbian Music School</mark> in<br>
-               Belgrade. He remains the director of this school until his death. Today the school bears his name. His work as a melograph bore many transcriptions of thus far unwritten folk
-                songs.
-        </P>
-        <p><mark>Stevan Mokranjac died in Skopje, Macedonia (<i>then Kingdom of Serbia</i>), aged 58.</mark></p>
-        <p>
-            Every year, the town of <b>Negotin</b> organizes a music festival in his honor called <b>Mokranjčevi dani</b> (<i>Days of Mokranjac</i>). The town also has a <b>Mokranjac museum</b>.
-        </p>
-        <h2>Works</h2>
-        <hr>
-        <p>
-            His life was highly influenced by church and folk songs, and he used these two types of music as inspiration for his work. His most famous pieces are the <b>fifteen Rukoveti</b>
-             (<i>Potpourri; literally: "handfuls" or "bunches"</i>) - a collection of<br> songs and music (<i>orchestral suites</i>) based on motives of <b>Serbian</b> folk music from 
-             <b>Bosnia and Herzegovina, Serbia Proper, Montenegro, Kosovo and Metohija, Macedonia</b> and <b>Bulgaria</b>. His other prominent folk-based works include <b>Primorski<br> 
-            napjevi</b> (<i>Coastland tunes</i>), and <b>Kozar</b>.
-        </p>
-        <p>
-            A significant number of his works were made for church services. Such as the <b>Božanstvena Liturgija Svetog Jovana Zlatoustog</b> (<i>The Divine Liturgy of St. Chrysostom</i>),
-             from which the <b>Heruvimska pesma</b> (<i>Cherubic hymn</i>) is most famous. Another<br> two famous religious pieces are <b>Tebe Boga hvalim</b> (<i>Te Deum</i>) and
-              <b>Veličanije Sv. Savi</b> (<i>Megalynarion to St. Sava</i>).
-        </p>
-        <h2>Compositions</h2>
-        <hr>
-        <p>
-            <mark>Some of the most famous Mokranjac's compositions are:</mark>
-        </p>
-        <ul>
-            <li>Statija treća</li>
-            <li>Tebe pojem</li>
-            <li>Aliluja (<i>Alleluia after the Cherubikon</i>)</li>
-            <li>Aliluja (<i>Alleluia after the Trisagion</i>)</li>
-            <li>Budi imja Gospodnje</li>
-            <li>Cherubic Hymn (<i>Heruvimska pesma</i>)</li>
-            <li>Dve pesme na veliki petak</li>
-            <li>Akatist</li>
-            <li>Opelo</li>
-            <li>Tebe Boga hvalim</li>
-            <li>Kozar</li>
-            <li>Mnogaja ljeta</li>
-            <li>Molitvami Bogorodici</li>
-            <li>Njest svjat</li>
+    <title>Advanced CSS - Assignment 1</title>
+        <style>
 
-        </ul>
-        
-        <!-- Poštovani, trudio sam se da iskoristim skoro sve iz lekcije što je moglo da se iskoristi u datom tekstu, čak i ovaj komentar. :) -->
-</body>
+            a[href^="https://www.google.com/"] {
+                color: green;
+            }
+
+            a[target="_blank"] {
+            color: red;
+            }
+
+            #second-div p:nth-child(2n+1) {
+            width: 80px;
+            background-color: blue;
+            color: white;
+            }
+
+            #second-div p:nth-child(2n+2) {
+            width: 80px;
+            background-color: red;
+            color: white;
+            }
+
+            h2+::after{
+            content: "-NEW";
+            color: yellow;
+            }
+
+            p:nth-child(3)::after {
+            content: "-NEW";
+            color: yellow;
+            }
+
+            #second-div p:nth-child(3)::after {
+            content: " ";
+            
+            }
+
+            :nth-child(8):hover {
+            font-style: italic;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Main Heading</h1>
+        <p>Paragraph 1</p>
+        <a href="https://www.google.com/">Google</a>
+        <a href="https://www.google.com/doodles">Google Doodles</a>
+        <a href="https://www.link-group.eu/" target="_blank">Goto Link Group</a>
+        <div id="first-div">
+            <h2>Subheading</h2>
+            <p>Paragraph 2</p>
+            <p>Paragraph 3</p>
+            <div id="second-div">
+                <h3>Sub subheading</h3>
+                <p>Paragraph 4</p>
+                <p>Paragraph 5</p>
+                <p>Paragraph 6</p>
+                <p>Paragraph 7</p>
+                <p>Paragraph 8</p>
+            </div>
+        </div>
+        <p>Paragraph 9</p>
+        <p>Paragraph 10</p>
+    </body>
 </html>
